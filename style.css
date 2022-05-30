@@ -7,25 +7,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-main {
-    padding: 20px;
-    overflow: auto;
-}
-
-h2,
-h3 {
-    color: #00a2c6
-}
-
-.jumbotron {
-    font-size: 20px;
-    padding: 60px;
-    background-color: #00c8eb;
-    text-align: center;
-    color: white;
-}
-
 nav {
     background-color: #00a2c6;
     padding: 5px;
@@ -37,13 +18,25 @@ nav a {
     text-decoration: none;
     color: white;
 }
-
-footer {
+main {
     padding: 20px;
-    color: white;
-    background-color: #00a2c6;
+    overflow: auto;
+}
+#content {
+    float: left;
+    width: 75%;
+}
+h2,
+h3 {
+    color: #00a2c6
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
     text-align: center;
-    font-weight: bold;
+    color: white;
 }
 
 ul a {
@@ -81,13 +74,23 @@ nav a:hover {
     margin-top: 20px;
 }
 
-#content {
-    float: left;
-    width: 75%;
-}
-
 aside {
     float: right;
     width: 25%;
     padding-left: 20px;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
