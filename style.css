@@ -1,108 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    background: #94B49F;
-    overflow: auto;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 header {
-    padding: 30px;
-    text-align: center;
-    background: #94B49F;
+    display: inline;
 }
-
-header h1 {
-    font-size: 50px;
-}
-
 nav {
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky;
+    background-color: #00a2c6;
+    padding: 5px;
     position: sticky;
     top: 0;
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
+    color: white;
 }
 
-nav a:hover {
-    background-color: #ddd;
-    color: black;
+main {
+    padding: 20px;
+    overflow: auto;
 }
 
-.content {
+#content {
     float: left;
     width: 75%;
 }
 
-aside {
-    float: left;
-    width: 25%;
-    background-color: #94B49F;
-    padding-left: 20px;
+h2,
+h3 {
+    color: #00a2c6
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.profile {
     text-align: center;
 }
 
-.pict {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: 250px;
-}
-
 .card {
-    background-color: #FCF8E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
 }
 
 footer {
     padding: 20px;
+    color: white;
+    background-color: #00a2c6;
     text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-    display: block;
+    font-weight: bold;
 }
 
-.profile {
-    width: 100%;
-}
+@media screen and (max-width: 1000px) {
 
-
-@media screen and (max-width: 800px) {
-
-    .content,
+    #content,
     aside {
         width: 100%;
         padding: 0;
-    }
-
-    .profile {
-        width: 30%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
     }
 }
